@@ -10,6 +10,7 @@
 
 ## C#:
 - WPF
+- Xamarin (немного)
 
 ## JavaScript:
 - TS (немного)
