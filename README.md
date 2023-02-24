@@ -1,18 +1,22 @@
-### Привет всем 🙌
+# Привет всем 🙌, меня зовут Роман 😊.
 
-## Я Python Web Developer, и я еще учусь
+## Мои скилы.
+## Python:
+- Django
+- Django Rest Framework
+- Sqlalchemy (немного)
+- FastApi (немного)
+- Flask (немного)
 
-<!--
-**Deeerain/Deeerain** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## C#:
+- WPF
 
-Here are some ideas to get you started:
+## JavaScript:
+- TS (немного)
+- Vue (Vite TS)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Другое:
+- Docker (немного)
+- Git
+- SQL (небольшая база)
+- HTML, CSS, Sass
