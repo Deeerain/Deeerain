@@ -1,4 +1,6 @@
-### Hi there 👋
+### Привет всем 🙌
+
+## Я Python Web Developer, и я еще учусь
 
 <!--
 **Deeerain/Deeerain** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
