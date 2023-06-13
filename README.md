@@ -21,3 +21,7 @@
 - Git
 - SQL (небольшая база)
 - HTML, CSS, Sass
+
+![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=deeerain&theme=solarized_dark)
+![](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=deeerain&theme=solarized_dark)
+![](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=daniilshat&theme=solarized_dark)
