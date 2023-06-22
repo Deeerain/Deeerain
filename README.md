@@ -4,23 +4,27 @@
 ## Python:
 - Django
 - Django Rest Framework
-- Sqlalchemy (немного)
-- FastApi (немного)
-- Flask (немного)
+### Есть небольшой опыт:
+- Sqlalchemy
+- FastApi
+- Flask
 
 ## C#:
 - WPF
-- Xamarin (немного)
+### Есть небольшой опыт:
+- Xamarin
 
 ## JavaScript:
-- TS (немного)
+- JS/TS
+### Есть небольшой опыт:
 - Vue (Vite TS)
 
 ## Другое:
-- Docker (немного)
 - Git
-- SQL (небольшая база)
 - HTML, CSS, Sass
+### Есть небольшой опыт:
+- SQL (небольшая база)
+- Docker (немного)
 
 ![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=deeerain&theme=solarized_dark)
 ![](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=deeerain&theme=solarized_dark)
