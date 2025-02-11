@@ -1,3 +1,16 @@
+<script setup lang="ts">
+import { onMounted } from 'vue';
+import { useRepositoriesStore } from '../storage';
+import ProjectList from '../components/ProjectList.vue';
+
+const repositoriesStore = useRepositoriesStore()
+
+onMounted(() => {
+    repositoriesStore.load('deeerain')
+})
+
+</script>
+
 <template>
-    <h1>Hello world</h1>
+    <ProjectList :projects="repositoriesStore.items"/>
 </template>
