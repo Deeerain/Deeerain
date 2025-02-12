@@ -1,5 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    font-family: "Roboto", serif;
+
+    --bg-color: #121212;
+    --font-color: #FFFFFF;
+    --primary-color: #BB86FC;
+    --secondary-color: #FF7597;
+    --success-color: #4CAF50;
+    --error-color: #CF6679;
+    --dark-gray-color: #333333;
+    --light-gray-color: #1E1E1E;
+    --hover-color: #2C2C2C;  
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    color: var(--font-color);
+
+    &:hover {
+        color: var(--hover-color);
+    }
+}
+
+.btn {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--font-color);
+    padding: 5px;
+    border-radius: 0.3rem;
+
+    &:hover {
+        background-color: var(--hover-color);
+        cursor: pointer;
+    }
+}
+
+.container {
+    margin: 0 auto;
+
+    @media (min-width: 576px) {
+        max-width: 540px;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 720px;
+    }
+
+    @media (min-width: 992px) {
+        max-width: 960px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1140px;
+    }
 }
