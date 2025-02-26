@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-
-
 import { computed } from 'vue';
 import ProjectList from '../components/ProjectList.vue';
 import { useRepositoriesStore } from '../storage';

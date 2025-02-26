@@ -3,7 +3,19 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import routes from './router/routes';
+import { onMounted, ref } from 'vue';
 
+
+let time = ref()
+
+let updateTime = () => {
+  const now = new Date()
+  time.value = now.toLocaleTimeString()
+}
+
+onMounted(() => {
+  setInterval(updateTime, 1000)
+})
 </script>
 
 <template>
@@ -37,7 +49,7 @@ import routes from './router/routes';
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -68,5 +80,14 @@ main {
 footer {
   border-top: 1px solid var(--dark-gray-color);
   padding: 0.8rem;
+}
+
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  font-size: 90pt;
+  z-index: 0;
 }
 </style>
