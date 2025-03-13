@@ -5,17 +5,6 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import routes from './router/routes';
 import { onMounted, ref } from 'vue';
 
-
-let time = ref()
-
-let updateTime = () => {
-  const now = new Date()
-  time.value = now.toLocaleTimeString()
-}
-
-onMounted(() => {
-  setInterval(updateTime, 1000)
-})
 </script>
 
 <template>
