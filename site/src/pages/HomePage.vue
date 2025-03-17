@@ -22,23 +22,11 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="container">
-        <div class="presentation">
-            <h1>Привет&#9995, меня зовут <Glitch text="Роман"/>&#128578.</h1>
-            <p>Стараюсь пройти путь от новичка до настоящего <Glitch text="разработчика"/>, шаг за шагом совершенствуя свои <Glitch text="навыки"/>.</p>
-        </div>
+    <div class="presentation">
+        <h1>Привет&#9995, меня зовут <Glitch text="Роман"/>&#128578.</h1>
+        <p>Стараюсь пройти путь от новичка до настоящего <Glitch text="разработчика"/>, шаг за шагом совершенствуя свои <Glitch text="навыки"/>.</p>
     </div>
 </template>
 
 <style scoped lang="scss">
-.presentation-bg {
-    position: absolute;
-    transform-style: preserve-3d;
-    perspective: 800px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
 </style>

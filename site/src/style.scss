@@ -11,7 +11,8 @@
     --error-color: #CF6679;
     --dark-gray-color: #333333;
     --light-gray-color: #1E1E1E;
-    --hover-color: #2C2C2C;  
+    --hover-color: #2C2C2C;
+    --orange-color: #cf6603;
 }
 
 * {
@@ -48,22 +49,11 @@ a {
     }
 }
 
-.container {
-    margin: 0 auto;
+.nav-link {
+    cursor: pointer;
+    font-weight: 600;
 
-    @media (min-width: 576px) {
-        max-width: 540px;
-    }
-
-    @media (min-width: 768px) {
-        max-width: 720px;
-    }
-
-    @media (min-width: 992px) {
-        max-width: 960px;
-    }
-
-    @media (min-width: 1200px) {
-        max-width: 1140px;
+    &:hover {
+        text-shadow: 1px 1px 2px black;
     }
 }
