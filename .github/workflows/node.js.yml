@@ -2,10 +2,9 @@ name: Test and Deploy static content to Pages
 
 on:
   push:
-    branches: ['site']
+    branches: ['site', 'master']
 
   workflow_dispatch:
-    branches: ['site']
 
 permissions:
   contents: read
