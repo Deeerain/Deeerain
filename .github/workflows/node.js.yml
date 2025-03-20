@@ -5,6 +5,7 @@ on:
     branches: ['site']
 
   workflow_dispatch:
+    branches: ['site']
 
 permissions:
   contents: read
