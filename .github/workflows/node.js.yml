@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: To workdir
-        run: cd ./site
+        run: cd site
     
       - name: Checkout code
         uses: actions/checkout@v4
@@ -52,7 +52,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: To workdir
-        run: cd ./site
+        run: cd site
     
       - name: Checkout
         uses: actions/checkout@v4
@@ -80,7 +80,6 @@ jobs:
         with:
           # Upload dist folder
           path: './dist'
-          working-directory: "./site"
           
       - name: Deploy to GitHub Pages
         id: deployment
