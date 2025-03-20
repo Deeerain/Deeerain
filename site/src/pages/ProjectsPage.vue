@@ -13,17 +13,13 @@ computed(() => {
 
 <template>
     <div class="projects">
-        <div class="projects__header">
-            <h1>Проекты</h1>
-        </div>
         <ProjectList :projects="projectsStorage.items"></ProjectList>
     </div>
 </template>
 
 <style scoped lang="scss">
 .projects {
-    .project-list {
-        margin-top: 1rem;
-    }
+    padding: 1rem;
+    min-height: 100vh;
 }
 </style>

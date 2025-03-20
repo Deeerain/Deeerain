@@ -5,6 +5,7 @@ export interface IRepository {
     owner: IUser
     language: string
     html_url: string
+    image: string
 }
 
 export interface IUser {

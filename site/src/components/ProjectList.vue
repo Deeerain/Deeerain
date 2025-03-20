@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { IRepository } from '../api/types';
+import ProjectCard from './ProjectCard.vue';
 defineProps<{
     projects: Array<IRepository>
 }>()
@@ -7,11 +8,7 @@ defineProps<{
 
 <template>
     <div class="project-list project-list--grid">
-        <div class="project-list__item project" v-for="item in projects" :key="item.id">
-            <a :href="item.html_url" class="project__title"><h2>{{ item.name }}</h2></a>
-            <p class="project__description">{{ item.description }}</p>
-            <span>{{ item.language }}</span>
-        </div>
+        <ProjectCard :name="item.name" :url="item.html_url" :lang="item.language" :description="item.description" v-for="item in projects" :key="item.id" />
     </div>
 </template>
 
