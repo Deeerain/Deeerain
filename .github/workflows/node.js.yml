@@ -31,15 +31,19 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+        working-directory: "./site"
 
       - name: Lint Code
         run: npm run lint
+        working-directory: "./site"
 
       - name: Type Check
         run: npm run type-check
+        working-directory: "./site"
 
       - name: Run Unit Tests
         run: npm run test:unit
+        working-directory: "./site"
 
   deploy:
     needs: lint-and-test
@@ -50,17 +54,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'npm'
+          
       - name: Install dependencies
         run: npm ci
+        working-directory: "./site"
+        
       - name: Build
         run: npm run build
+        working-directory: "./site"
+        
       - name: Setup Pages
         uses: actions/configure-pages@v4
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
