@@ -5,6 +5,9 @@ on:
     branches: ['site', 'master']
 
   workflow_dispatch:
+defaults:
+      run:
+        working-directory: "./site"
 
 permissions:
   contents: read
@@ -19,9 +22,6 @@ jobs:
   lint-and-test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: "./site"
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
