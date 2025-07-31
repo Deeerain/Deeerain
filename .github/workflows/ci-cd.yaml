@@ -22,8 +22,15 @@ jobs:
     - name: Build project
       run: npm run build
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Uplaod artifact
+      uses: actions/upload-pages-artifact@v3
       with:
+<<<<<<< HEAD
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./dist
+=======
+        path: './dist'
+
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v4
+>>>>>>> 1c22c99 (update ci -cd)
