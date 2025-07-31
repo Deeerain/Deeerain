@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   plugins: [vue()],
-  base: import.meta.env
+  base: import.meta.env.DEV
   ? '/Deeerain/'
   : '/',
 })
