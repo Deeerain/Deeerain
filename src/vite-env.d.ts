@@ -1,9 +1,8 @@
 /// <reference types="vite/client" />
 
 interface ImportMetaEnv {
-    NODE_ENV: string
-    DEV: boolean
-    PROD: boolean
+    VITE_APP_DEV: boolean
+    VITE_APP_PROD: boolean
 }
 
 interface ImportMeta {
