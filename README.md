@@ -61,5 +61,5 @@ const myStats = {
   coffeeConsumption: "Измеряется в литрах",
   stackOverflowVisits: "Чаще чем соцсети"
 };
-
+```
 </div>
