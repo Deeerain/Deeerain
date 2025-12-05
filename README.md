@@ -1,8 +1,6 @@
 <div align="center">
   
-![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Ваше%20Имя&fontSize=60&fontAlignY=35&desc=Хобби%20разработчик%20🚀&descAlignY=55)
-
-# 🎮 **Роман | Не разработчик, просто увлекаюсь**
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Роман&fontSize=60&fontAlignY=35&desc=Не разработчик, просто увлекаюсь🚀&descAlignY=55)
 
 ### *"Код на коленке, баги в наследство"*
 
