@@ -40,7 +40,12 @@
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
 
-## *"Цифры, которые никого не волнуют, кроме меня"*
+
+<div align="center">
+
+## 📊 **Статистика хобби-разработчика**
+
+### *"Цифры, которые никого не волнуют, кроме меня"*
 
 ![Coffee Cups](https://img.shields.io/badge/☕_Чашек_кофе-∞-brown?style=for-the-badge)
 ![StackOverflow](https://img.shields.io/badge/🔍_Поисков_в_Google-999+-blue?style=for-the-badge)
@@ -50,7 +55,7 @@
 
 ---
 
-## 📈 **Настоящая статистика**
+### 📈 **Настоящая статистика**
 ```javascript
 const myStats = {
   linesOfCode: "Достаточно, чтобы было работоспособно",
@@ -61,5 +66,3 @@ const myStats = {
   coffeeConsumption: "Измеряется в литрах",
   stackOverflowVisits: "Чаще чем соцсети"
 };
-```
-</div>
