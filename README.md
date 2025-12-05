@@ -40,4 +40,26 @@
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
 
+## *"Цифры, которые никого не волнуют, кроме меня"*
+
+![Coffee Cups](https://img.shields.io/badge/☕_Чашек_кофе-∞-brown?style=for-the-badge)
+![StackOverflow](https://img.shields.io/badge/🔍_Поисков_в_Google-999+-blue?style=for-the-badge)
+![Bugs Created](https://img.shields.io/badge/🐛_Созданных_багов-∞-red?style=for-the-badge)
+
+</div>
+
+---
+
+## 📈 **Настоящая статистика**
+```javascript
+const myStats = {
+  linesOfCode: "Достаточно, чтобы было работоспособно",
+  hoursOfDebugging: "Больше, чем хотелось бы",
+  projectsFinished: "Те, что не надоели",
+  projectsAbandoned: "Те, что надоели",
+  motivationLevel: "Переменная, зависит от погоды",
+  coffeeConsumption: "Измеряется в литрах",
+  stackOverflowVisits: "Чаще чем соцсети"
+};
+
 </div>
