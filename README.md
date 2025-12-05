@@ -1,6 +1,6 @@
 <div align="center">
   
-![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Роман&fontSize=60&fontAlignY=35&desc=Не разработчик, просто увлекаюсь🚀&descAlignY=55)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Роман&fontSize=60&fontAlignY=35&desc=Не%20разработчик,%20просто%20увлекаюсь🚀&descAlignY=55)
 
 ### *"Код на коленке, баги в наследство"*
 
