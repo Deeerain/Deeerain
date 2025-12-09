@@ -51,8 +51,6 @@ const header_hidden = ref<boolean>(true);
 .nav {
   display: flex;
   text-transform: uppercase;
-  font-size: large;
-  letter-spacing: 0.2rem;
   justify-content: space-between;
   align-items: center;
   writing-mode: vertical-rl;
@@ -89,6 +87,11 @@ header {
   background-color: var(--orange-color);
   height: 100%;
   min-width: 200px;
+
+  .nav {
+    font-size: clamp(0.3rem, 3vw, 1rem);
+    letter-spacing: clamp(0.1rem, 2vw, 0.3rem);
+  }
 
   &::after,
   &::before {
