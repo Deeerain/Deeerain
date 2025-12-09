@@ -10,7 +10,9 @@ export interface IRepository {
 
 export interface IUser {
   login: string,
-  name: string
+  name: string,
+  avatar_url: string,
+  bio: string | null,
 }
 
 export interface IReadmeFileInfo {

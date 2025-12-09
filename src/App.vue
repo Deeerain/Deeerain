@@ -84,23 +84,6 @@ footer {
   }
 }
 
-.header--hidden {
-  transition: 0.5s;
-
-  @media screen and (max-width: 800px) {
-    min-width: 50px;
-    position: relative;
-
-    .nav {
-      display: none;
-    }
-
-    .open-menu {
-      display: block;
-    }
-  }
-}
-
 header {
   transition: 0.5s;
   background-color: var(--orange-color);
@@ -115,10 +98,6 @@ header {
   .open-menu {
     background-color: black;
     display: none;
-  }
-
-  @media screen and (max-width: 800px) {
-    position: fixed;
   }
 }
 
@@ -147,6 +126,38 @@ footer {
   span {
     writing-mode: vertical-rl;
     flex-grow: 1;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  header,
+  footer {
+    height: auto;
+    flex-direction: row;
+
+    .nav {
+      writing-mode: unset;
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      height: 2px;
+    }
+  }
+
+  footer {
+    &::after {
+      background-color: var(--orange-color);
+    }
+
+    span {
+      writing-mode: unset;
+    }
   }
 }
 </style>
