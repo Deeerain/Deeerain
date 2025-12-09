@@ -4,17 +4,11 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import routes from './router/routes';
 import { ref } from 'vue';
-
-const header_hidden = ref<boolean>(true);
-
 </script>
 
 <template>
   <div class="wrapper">
-    <header :class="{ 'header--hidden': header_hidden }" @mouseleave="header_hidden = true">
-      <button class="btn open-menu" @click="header_hidden = !header_hidden">
-        <font-awesome-icon :icon="fas.faArrowRight" />
-      </button>
+    <header class="header">
       <nav class="nav">
         <div class="nav nav__links">
           <RouterLink class="nav-link" to="/">Deerain</RouterLink>
@@ -26,7 +20,7 @@ const header_hidden = ref<boolean>(true);
     <main>
       <RouterView></RouterView>
     </main>
-    <footer>
+    <footer class="footer">
       <nav class="nav">
         <div class="nav nav__links">
           <a class="nav-link" href="https://t.me/d33i2"><font-awesome-icon :icon="fab.faTelegram" /></a>
@@ -58,8 +52,8 @@ const header_hidden = ref<boolean>(true);
   flex-grow: 1;
 }
 
-header,
-footer {
+.header,
+.footer {
   padding: 0.8rem;
   display: flex;
   flex-direction: column;
@@ -82,7 +76,7 @@ footer {
   }
 }
 
-header {
+.header {
   transition: 0.5s;
   background-color: var(--orange-color);
   height: 100%;
@@ -114,7 +108,7 @@ main {
   }
 }
 
-footer {
+.footer {
   color: var(--orange-color);
 
   .nav {
@@ -137,8 +131,8 @@ footer {
     flex-direction: column;
   }
 
-  header,
-  footer {
+  .header,
+  .footer {
     height: auto;
     flex-direction: row;
 
@@ -153,7 +147,7 @@ footer {
     }
   }
 
-  footer {
+  .footer {
     &::after {
       background-color: var(--orange-color);
     }
