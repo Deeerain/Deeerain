@@ -11,30 +11,31 @@ const header_hidden = ref<boolean>(true);
 
 <template>
   <div class="wrapper">
-      <header :class="{'header--hidden': header_hidden}" @mouseleave="header_hidden = true">
-        <button class="btn open-menu" @click="header_hidden = !header_hidden">
-          <font-awesome-icon :icon="fas.faArrowRight"/>
-        </button>
-        <nav class="nav">
-          <div class="nav nav__links">
-            <RouterLink class="nav-link" to="/">Deerain</RouterLink>
-            <RouterLink class="nav-link" :to="{name: item.name}" v-for="item, index in routes.filter(i => i.meta)" :key="index">{{ item.meta?.text }}</RouterLink>
-          </div>
-        </nav>
-      </header>
-      <main>
-        <RouterView></RouterView>
-      </main>
-      <footer>
-        <nav class="nav">
-          <div class="nav nav__links">
-            <a class="nav-link" href="https://t.me/d33i2"><font-awesome-icon :icon="fab.faTelegram" /></a>
-            <a class="nav-link" href="https://github.com/Deeerain"><font-awesome-icon :icon="fab.faGithub" /></a>
-            <a class="nav-link" href="mailto:1deerain1@gmail.com"><font-awesome-icon :icon="fas.faEnvelope" /></a>
-          </div>
-        </nav>
-        <span> &copy; Copyright {{ new Date().getFullYear() }}</span>
-      </footer>
+    <header :class="{ 'header--hidden': header_hidden }" @mouseleave="header_hidden = true">
+      <button class="btn open-menu" @click="header_hidden = !header_hidden">
+        <font-awesome-icon :icon="fas.faArrowRight" />
+      </button>
+      <nav class="nav">
+        <div class="nav nav__links">
+          <RouterLink class="nav-link" to="/">Deerain</RouterLink>
+          <RouterLink class="nav-link" :to="{ name: item.name }" v-for="item, index in routes.filter(i => i.meta)"
+            :key="index">{{ item.meta?.text }}</RouterLink>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <RouterView></RouterView>
+    </main>
+    <footer>
+      <nav class="nav">
+        <div class="nav nav__links">
+          <a class="nav-link" href="https://t.me/d33i2"><font-awesome-icon :icon="fab.faTelegram" /></a>
+          <a class="nav-link" href="https://github.com/Deeerain"><font-awesome-icon :icon="fab.faGithub" /></a>
+          <a class="nav-link" href="mailto:1deerain1@gmail.com"><font-awesome-icon :icon="fas.faEnvelope" /></a>
+        </div>
+      </nav>
+      <span> &copy; Copyright {{ new Date().getFullYear() }}</span>
+    </footer>
   </div>
 </template>
 
@@ -59,7 +60,7 @@ const header_hidden = ref<boolean>(true);
   flex-grow: 1;
 }
 
-header, 
+header,
 footer {
   padding: 0.8rem;
   display: flex;
@@ -67,7 +68,7 @@ footer {
   justify-content: space-between;
   align-content: center;
   gap: 1rem;
-  
+
   a {
     color: black;
   }
@@ -85,6 +86,7 @@ footer {
 
 .header--hidden {
   transition: 0.5s;
+
   @media screen and (max-width: 800px) {
     min-width: 50px;
     position: relative;
@@ -124,7 +126,7 @@ header {
 main {
   flex-grow: 1;
   overflow-y: scroll;
-  
+
   &::-webkit-scrollbar {
     width: 0;
   }
@@ -136,7 +138,7 @@ footer {
   .nav {
     justify-content: center;
     flex-grow: 1;
-    
+
     a {
       color: var(--orange-color);
     }
